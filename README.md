@@ -6,11 +6,11 @@ Little Known Laravel
 General
 -------
 
--   [Working with Stored Procedures](general.md#working-with-stored-procedures)
+-   [Working with Stored Procedures](GENERAL.md#working-with-stored-procedures)
 
 -   Creating a Custom Auth Guard
 
--   [Updating config at run time](general.md#updating-config-at-run-time)
+-   [Updating config at run time](GENERAL.md#updating-config-at-run-time)
 
 Auth
 ----
@@ -18,18 +18,18 @@ Auth
 Cache
 -----
 
--   [many()](cache.md)
+-   [many()](CACHE.md#many)
 
--   [putMany()](cache.md)
+-   [putMany()](CACHE.md#putmany)
 
--   [sear()](cache.md)
+-   [sear()](CACHE.md#sear)
 
--   [setDefaultCacheTime()](cache.md)
+-   [setDefaultCacheTime()](CACHE.md#setdefaultcachetime)
 
 Config
 ------
 
--   [output()](console.md)
+-   [output()](CONSOLE.md#output)
 
 Console
 -------
