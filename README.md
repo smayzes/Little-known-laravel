@@ -6,11 +6,11 @@ Little Known Laravel
 General
 -------
 
--   [Working with Stored Procedures](general.md)
+-   [Working with Stored Procedures](general.md#working-with-stored-procedures)
 
 -   Creating a Custom Auth Guard
 
--   [Updating config at run time](general.md#Updating_config_at_run_time)
+-   [Updating config at run time](general.md#updating-config-at-run-time)
 
 Auth
 ----
