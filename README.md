@@ -43,6 +43,9 @@ Cookie
 Database
 --------
 
+- [Eloquent](Database/ELOQUENT.md)
+  - [Model](Database/Eloquent/MODEL.md)
+
 Encryption
 ----------
 
