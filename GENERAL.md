@@ -93,3 +93,7 @@ While most config settings are static there are times we may want to update the 
 ```
 config(['app.debug' => true]);
 ```
+
+# Obsfucating ID's for API's
+
+// TODO
