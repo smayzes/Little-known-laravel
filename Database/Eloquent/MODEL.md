@@ -54,3 +54,25 @@ In the end if we ever need to get the original data that has not been mutated, w
 ```
 $pizza->getOriginal('name');
 ```
+
+## Using Mutators & Accessors to create new Model properties
+
+_@TODO Expand and provide better examples_
+
+In my experience when working with a legacy database, the database structure isn't always ideal for my ideal output. Mutators and accessors help keep the logic out of my controller to make clean and consistent data for my storage medium. 
+
+```
+public function getSpecialSauceAttribute($value)
+{
+    return $this->regular_sauce . ', ' . $this->garlic_amount;
+}
+```
+
+I can also use the mutator to set Model properties for the storage medium of choice. 
+
+```
+public function setSpecialSauceAttribute($value)
+{
+    list($this->regular_sauce, $thi->garlic_amount) = implode(', ', $this->special_sauce);
+}
+```
