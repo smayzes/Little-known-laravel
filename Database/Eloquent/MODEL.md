@@ -76,3 +76,13 @@ public function setSpecialSauceAttribute($value)
     list($this->regular_sauce, $thi->garlic_amount) = implode(', ', $this->special_sauce);
 }
 ```
+
+## Return a timestamp as DateTime object with time set to 00:00:00.
+@TODO expand
+```
+// Retrieve a model by its primary key...
+$pizza = App\Pizza::find(1);
+
+echo $pizza-asDate('cooked_at'); 
+```
+
