@@ -27,3 +27,30 @@ class Pizza
 ```
 
 Now, through using Eloquent these columns will be populated on Insert and Update. 
+
+## Check if a Mutator or Accessor has been set
+
+In an Eloquent Model you can set (mutators & accessors)[https://laravel.com/docs/5.4/eloquent-mutators#accessors-and-mutators] on your Model properties. There may be times where you might need to check if a mutator or accessor exists for this property. 
+
+For example we have an accessor on the `cheese` property of our Pizza Model, this will return a boolean result:
+```
+// Retrieve a model by its primary key...
+$pizza = App\Pizza::find(1);
+
+// Returns boolean result based on accessor existence
+echo $pizza-hasSetMutator('cheese'); 
+```
+We can also have a mutator on the same `cheese` property that we want to check against:
+
+```
+// Retrieve a model by its primary key...
+$pizza = App\Pizza::find(1);
+
+// Returns boolean result based on accessor existence
+echo $pizza-hasGetMutator('cheese'); 
+```
+
+In the end if we ever need to get the original data that has not been mutated, we can run the following code: 
+```
+$pizza->getOriginal('name');
+```
